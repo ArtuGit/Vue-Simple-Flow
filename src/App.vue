@@ -4,7 +4,6 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div id="page">
-    <!--Container for Vue-->
     <div id="content">
       <div id="sidebar">
         <h1>Simple Flow</h1>
