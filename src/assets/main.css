@@ -1,305 +1,313 @@
 @import './base.css';
-html, body, #page {
-    height: 100vh;
+html,
+body,
+#page {
+  height: 100vh;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body  {
-    font: 1.2em 'Roboto', sans-serif;
-    background: #505750;
-    color: #FFFFFF;
+body {
+  font:
+    1.2em 'Roboto',
+    sans-serif;
+  background: #505750;
+  color: #ffffff;
 }
 
 #page {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 h1 {
-    margin: 1rem 1rem 0;
-    padding-bottom: 1rem;
-    font-size: 1.8rem;
-    font-style: italic;
-    font-weight: bold;
-    color: ghostwhite;
+  margin: 1rem 1rem 0;
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: bold;
+  color: ghostwhite;
 }
 
 #content {
-    flex: 1 5 auto;
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 20px;
+  flex: 1 5 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 20px;
 }
 
 #sidebar {
-    display: flex;
-    flex-flow: column nowrap;
-    flex: 1 0 10rem;
-    align-self: center;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 10rem;
+  align-self: center;
 }
 
 #sidebar h2 {
-    padding-bottom: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #F8F854;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f8f854;
 }
 
 .content-block > h2 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .content-block {
-    margin: 0 1rem 0 1rem;
-    padding: 2rem 2rem;
-    display: inline-block;
-    position: relative;
-    border: 2px solid #fff; /* White border inside the blocks */
-    border-radius: 6px; /* Adjust the radius to match the outer block's border */
+  margin: 0 1rem 0 1rem;
+  padding: 2rem 2rem;
+  display: inline-block;
+  position: relative;
+  border: 2px solid #fff; /* White border inside the blocks */
+  border-radius: 6px; /* Adjust the radius to match the outer block's border */
 }
 
 .content-block::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    z-index: -1;
-    background-color: #5454FB;
-    border-radius: 8px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;
+  background-color: #5454fb;
+  border-radius: 8px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
 }
 
 main {
-    flex: 10 1 0;
+  flex: 10 1 0;
 }
 
 main h2 {
-    margin: 1.4rem 0 1.2rem 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #F8F854;
+  margin: 1.4rem 0 1.2rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f8f854;
 }
 
 main h2:first-child {
-    margin: 0 0 1.2rem 0;
+  margin: 0 0 1.2rem 0;
 }
 
 main.content-block {
-    display: flex;
-    flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 main.content-block table {
-    align-self: center;
+  align-self: center;
 }
 
 nav {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  list-style: none;
 }
 
 nav > ul li a {
-    display: block;
-    padding: 0.3rem 1.5rem;
-    font-size: 1.4rem;
-    color: whitesmoke;
-    text-decoration: none;
+  display: block;
+  padding: 0.3rem 1.5rem;
+  font-size: 1.4rem;
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 nav > ul li:hover {
-    background: black;
+  background: black;
 }
 
 nav > ul li .active {
-    background-color: #AAAAAA;
-    color: #040402;
-    font-weight: bold;
+  background-color: #aaaaaa;
+  color: #040402;
+  font-weight: bold;
 }
 
 .label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Form */
 form {
-    margin-top: -10px;
+  margin-top: -10px;
 }
 
 input {
-    padding: 5px;
-    margin-bottom: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="number"],
-input[type="checkbox"],
-input[type="radio"],
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='number'],
+input[type='checkbox'],
+input[type='radio'],
 textarea {
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-    font-size: 1rem;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-size: 1rem;
 }
 
 textarea {
-    padding: 0.4rem 0.5rem;
+  padding: 0.4rem 0.5rem;
 }
 
 label {
-    display: block;
-    margin: 0.5rem 0;
+  display: block;
+  margin: 0.5rem 0;
 }
 
 /* Additional styling for checkboxes and radio buttons */
-input[type="checkbox"] + label,
-input[type="radio"] + label {
-    display: inline-block;
-    margin-right: 0.9rem;
+input[type='checkbox'] + label,
+input[type='radio'] + label {
+  display: inline-block;
+  margin-right: 0.9rem;
 }
 
 .btn {
-    display: inline-block;
-    padding: 5px 3rem;
-    margin: 5px;
-    background-color: #AAAAAA;
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: inline-block;
+  padding: 5px 3rem;
+  margin: 5px;
+  background-color: #aaaaaa;
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
 }
 
 .btn:active {
-    transform: translateY(3px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transform: translateY(3px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .buttons-margin {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .form-fields {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 .form-field {
-    margin-right: 3rem;
+  margin-right: 3rem;
 }
 
 .form-field:last-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 /* end Form */
 
 /* Table */
 table {
-    font-family: "Courier New", monospace;
-    border-collapse: collapse;
-    border: 2px solid #5B88B6;
-    width: 95%;
-    border: 2px solid #5B88B6;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Courier New', monospace;
+  border-collapse: collapse;
+  border: 2px solid #5b88b6;
+  width: 95%;
+  border: 2px solid #5b88b6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-th, td {
-    border: 1px solid #5B88B6;
-    padding: 8px;
-    text-align: center;
-    font-weight: normal;
+th,
+td {
+  border: 1px solid #5b88b6;
+  padding: 8px;
+  text-align: center;
+  font-weight: normal;
 }
 
 .top-row {
-    background-color: #5B88B6;
-    color: #FFFFFF;
-    font-size: 1.3rem;
-    font-weight: bold;
+  background-color: #5b88b6;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .data-row:nth-child(odd) {
-    background-color: #5B88B6;
+  background-color: #5b88b6;
 }
 
 .data-row:nth-child(even) {
-    background-color: #4682B4;
+  background-color: #4682b4;
 }
 
 table a {
-    color: #FFFFFF;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 table a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Responsive styles */
 @media screen and (max-width: 1600px) {
-    table {
-        width: 100%;
-    }
+  table {
+    width: 100%;
+  }
 
-    td, th {
-        display: block;
-    }
+  td,
+  th {
+    display: block;
+  }
 
-    td {
-        text-align: left;
-    }
+  td {
+    text-align: left;
+  }
 
-    .top-row, .data-row {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .top-row,
+  .data-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .top-row > *, .data-row > * {
-        flex: 1 1 100%;
-    }
+  .top-row > *,
+  .data-row > * {
+    flex: 1 1 100%;
+  }
 }
 
 /* end Table */
 
 @media all and (max-width: 900px) {
-    #content {
-        flex-flow: column nowrap;
-    }
+  #content {
+    flex-flow: column nowrap;
+  }
 
-    #content .content-block {
-        margin: 1rem 0 1rem 0;
-    }
+  #content .content-block {
+    margin: 1rem 0 1rem 0;
+  }
 
-    #sidebar-block {
-        flex: 1 0 5rem;
-        align-self: stretch;
-    }
+  #sidebar-block {
+    flex: 1 0 5rem;
+    align-self: stretch;
+  }
 
-    main {
-        flex: 10 1 0;
-    }
+  main {
+    flex: 10 1 0;
+  }
 
-    nav {
-        flex-flow: row wrap;
-        justify-content: space-around;
-    }
+  nav {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
 
-    nav > ul li {
-        display: inline-block;
-    }
+  nav > ul li {
+    display: inline-block;
+  }
 }
-
-
