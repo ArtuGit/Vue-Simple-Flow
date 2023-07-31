@@ -135,4 +135,34 @@
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+main {
+  flex: 10 1 0;
+}
+
+main h2 {
+  margin: 1.4rem 0 1.2rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f8f854;
+}
+
+main h2:first-child {
+  margin: 0 0 1.2rem 0;
+}
+
+main.content-block {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main.content-block table {
+  align-self: center;
+}
+
+@media all and (max-width: 900px) {
+  main {
+    flex: 10 1 0;
+  }
+}
+</style>

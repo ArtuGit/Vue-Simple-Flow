@@ -39,20 +39,6 @@ h1 {
   padding: 20px;
 }
 
-#sidebar {
-  display: flex;
-  flex-flow: column nowrap;
-  flex: 1 0 10rem;
-  align-self: center;
-}
-
-#sidebar h2 {
-  padding-bottom: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #f8f854;
-}
-
 .content-block > h2 {
   text-transform: uppercase;
 }
@@ -77,30 +63,6 @@ h1 {
   background-color: #5454fb;
   border-radius: 8px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
-}
-
-main {
-  flex: 10 1 0;
-}
-
-main h2 {
-  margin: 1.4rem 0 1.2rem 0;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #f8f854;
-}
-
-main h2:first-child {
-  margin: 0 0 1.2rem 0;
-}
-
-main.content-block {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-main.content-block table {
-  align-self: center;
 }
 
 nav {
@@ -291,15 +253,6 @@ table a:hover {
 
   #content .content-block {
     margin: 1rem 0 1rem 0;
-  }
-
-  #sidebar-block {
-    flex: 1 0 5rem;
-    align-self: stretch;
-  }
-
-  main {
-    flex: 10 1 0;
   }
 
   nav {

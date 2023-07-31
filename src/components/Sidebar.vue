@@ -16,4 +16,18 @@
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#sidebar {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 10rem;
+  align-self: center;
+}
+
+#sidebar h2 {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f8f854;
+}
+</style>
