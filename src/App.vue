@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -152,13 +153,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </table>
       </main>
     </div>
-
-    <footer>
-      <p>
-        Simple Flow,
-        <span id="year">2023</span>
-      </p>
-    </footer>
+    <Footer />
   </div>
 </template>
 

@@ -124,24 +124,6 @@ nav > ul li .active {
     font-weight: bold;
 }
 
-footer {
-    flex-shrink: 0;
-    background: #FAFAFB;
-    height: 1.8rem;
-}
-
-footer > p {
-    color: #AF0000;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-#year {
-    color: black;
-    font-weight: normal;
-}
-
 .label {
     font-weight: bold;
 }
