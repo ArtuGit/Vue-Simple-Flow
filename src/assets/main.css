@@ -65,6 +65,31 @@ h1 {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
 }
 
+main {
+  flex: 10 1 0;
+}
+
+main h2 {
+  margin: 1.4rem 0 1.2rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f8f854;
+}
+
+main h2:first-child {
+  margin: 0 0 1.2rem 0;
+}
+
+main.content-block {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main.content-block table {
+  align-self: center;
+}
+
+
 .label {
   font-weight: bold;
 }
@@ -155,9 +180,8 @@ table {
   font-family: 'Courier New', monospace;
   border-collapse: collapse;
   border: 2px solid #5b88b6;
-  width: 95%;
-  border: 2px solid #5b88b6;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 95%;
 }
 
 th,
@@ -228,5 +252,9 @@ table a:hover {
 
   #content .content-block {
     margin: 1rem 0 1rem 0;
+  }
+
+  main {
+    flex: 10 1 0;
   }
 }
