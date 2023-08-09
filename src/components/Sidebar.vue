@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import Menu from './Menu.vue'
+import { useConfigStore } from '@/stores/config'
+
+const store = useConfigStore()
+const { appName } = store
 </script>
 
 <template>
   <div id="sidebar">
-    <h1>Simple Flow</h1>
+    <h1>{{ appName }}</h1>
     <Menu />
   </div>
 </template>

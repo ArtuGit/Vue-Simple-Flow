@@ -1,13 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useConfigStore } from '@/stores/config'
+
+const store = useConfigStore()
+const { appDescription } = store
+</script>
 
 <template>
   <main class="content-block">
-    <h2>Title</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus blanditiis dicta error
-      esse, impedit, in iusto libero molestias officiis possimus quos reiciendis repellendus soluta
-      suscipit totam vitae. Molestias, repellat?
-    </p>
+    <h2>Authentication</h2>
+    <p>{{ appDescription }}</p>
   </main>
 </template>
 

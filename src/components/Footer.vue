@@ -1,11 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useConfigStore } from '@/stores/config'
+
+const store = useConfigStore()
+const { appName } = store
+</script>
 
 <template>
   <footer>
-    <p>
-      Simple Flow,
-      <span id="year">2023</span>
-    </p>
+    <p>{{ appName }}<span id="year">, 2023</span></p>
   </footer>
 </template>
 
