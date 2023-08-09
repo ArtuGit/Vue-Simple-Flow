@@ -7,16 +7,10 @@ import { RouterLink} from 'vue-router'
     <h2>Menu</h2>
     <nav>
       <ul>
-        <li><a class="active" href="/">Auth</a></li>
-        <li><a href="/">Add record</a></li>
-        <li><a href="/">All records</a></li>
+        <li><RouterLink to="/">Auth</RouterLink></li>
+        <li><RouterLink to="/add-record">Add record</RouterLink></li>
+        <li><RouterLink to="/all-records">All records</RouterLink></li>
       </ul>
-    </nav>
-
-    <nav>
-      <RouterLink to="/">Auth</RouterLink>
-      <RouterLink to="/add-record">Add record</RouterLink>
-      <RouterLink to="/all-records">All records</RouterLink>
     </nav>
   </section>
 </template>
@@ -41,7 +35,7 @@ nav > ul li:hover {
   background: black;
 }
 
-nav > ul li .active {
+nav > ul li .router-link-active {
   background-color: #aaaaaa;
   color: #040402;
   font-weight: bold;
