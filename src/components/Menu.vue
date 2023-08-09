@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterLink} from 'vue-router'
+</script>
 
 <template>
   <section class="content-block">
@@ -9,6 +11,12 @@
         <li><a href="/">Add record</a></li>
         <li><a href="/">All records</a></li>
       </ul>
+    </nav>
+
+    <nav>
+      <RouterLink to="/">Auth</RouterLink>
+      <RouterLink to="/add-record">Add record</RouterLink>
+      <RouterLink to="/all-records">All records</RouterLink>
     </nav>
   </section>
 </template>
