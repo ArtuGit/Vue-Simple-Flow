@@ -18,6 +18,5 @@ const { appName } = store
   display: flex;
   flex-flow: column nowrap;
   flex: 1 0 10rem;
-  align-self: center;
 }
 </style>

@@ -37,6 +37,7 @@ h1 {
   display: flex;
   flex-flow: row nowrap;
   padding: 20px;
+  align-items: center;
 }
 
 .content-block > h2 {
@@ -251,9 +252,5 @@ table a:hover {
 
   #content .content-block {
     margin: 1rem 0 1rem 0;
-  }
-
-  main {
-    flex: 10 1 0;
   }
 }
